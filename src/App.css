@@ -1,0 +1,11 @@
+.user__card{
+  padding: 20px 30px;
+  border: 2px solid black;
+  width: 33%;
+}
+
+.users__cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
