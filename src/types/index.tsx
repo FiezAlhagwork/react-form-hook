@@ -1,6 +1,9 @@
 // const num: number[] = [1,23,4]
 // const  string : string[] = ["d", "s" , "sa"]
 
+import type { InputHTMLAttributes } from "react";
+import type { FieldError, UseFormRegisterReturn } from "react-hook-form";
+
 // const user:{name:string , age:number} =  {
 //     name:"fiez",
 //     age:12
@@ -37,3 +40,11 @@
 
 // type UserWithoutEmail = Omit<User, "email">;
 // type UsetwithEmailAndName = Pick<User, "email" | "name">;
+
+
+
+ export type InputFieldProps = {
+  label?: string;
+  error?: FieldError;
+  registration: UseFormRegisterReturn;
+} & InputHTMLAttributes<HTMLInputElement>;
